@@ -44,7 +44,7 @@ class Browser:
         self.actions = ActionChains(self.driver)
         sleep(1)
         # do an initial escape press
-        self.actions.send_keys(Keys.ESCAPE)
+        # self.actions.send_keys(Keys.ESCAPE)
         self.lastest_view = None
     
     def save_current_view(self)-> None:

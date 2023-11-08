@@ -10,7 +10,6 @@ class GPTV_Actor:
         self.last_response = None
         self.chat_history = []
         self.agent_memory = []
-
     def _call_api(self, messages):
         response = self.client.chat.completions.create(
             model="gpt-4-vision-preview",
@@ -64,8 +63,12 @@ class GPTV_Actor:
         self.last_response = response_json
         action = response_json['next_action']
         if action =="<STOP>":
-            input("Session terminated by agent. Press ENTER to quit...")
-            exit(0)
+            s = input("Agent request to terminate the session. Press ENTER to quit or send a message to the agent: ")
+            if s == "":
+                exit(0)
+            else:
+                self.chat_history.append({"role": "user", "content": s})
+                return
         if 'memorize' in response_json:
             self.agent_memory.append(response_json['memorize'])
         if 'user_response' in response_json:
