@@ -30,7 +30,7 @@ class GPTV_Actor:
             self.act()
 
     def start_browser(self, start_link="https://www.google.com", resolution=(768, 768)):
-        self.browser = Browser(start_link, resolution=(768, 768))
+        self.browser = Browser(start_link, resolution=(1024, 1024))
     
     def act(self):
         self.browser.save_current_view()
