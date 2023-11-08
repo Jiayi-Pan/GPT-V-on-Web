@@ -10,7 +10,7 @@ It's a fun project to explore the possibility of using GPT-4V to interact with t
 # For Mac users
 brew install chromedriver  
 # run `brew upgrade chromedriver` if you already have it
-pip install git+https://github.com/Jiayi-Pan/WebAI.git
+pip install git+https://github.com/Jiayi-Pan/GPT-V-on-Web.git
 ```
 
 **Run**
