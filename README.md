@@ -1,5 +1,5 @@
 # [🧠GPT-4 Vision](https://openai.com/research/gpt-4v-system-card) x [⌨️Vimium](https://github.com/philc/vimium) = Autonomous Web Agent
-
+![demo](demo.gif)
 This project leverages GPT4V to create an autonomous / interactive web agent. The action space are discretized by [Vimium](https://github.com/philc/vimium).
 
 It's a fun project to explore the possibility of using GPT-4V to interact with the web, but do not meant to be a serious project at current stage.
