@@ -9,5 +9,6 @@ setup(
         "console_scripts": [
             "webai = webai:main"
         ]
-    }
+    },
+    include_package_data=True
 )
